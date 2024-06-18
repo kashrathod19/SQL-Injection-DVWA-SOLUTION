@@ -39,4 +39,19 @@ We can observe from above that columns name such as ```id,login,password``` have
 
 We have found out the username and password of many users 
 
+# SQL (Medium)
+
+We have the final payload ```' Union select user,password from user#``` this will work on both the level ```medium``` and ```hard``` we just need to find the injected parameter this level will be performed with the help of ```Burp Suite```
+
+First Intercept the request 
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/649efa19-e910-4917-9192-303da6f1eac7)
+
+We will be using the ```id``` parameter to inject SQLi the payload will be the same i.e ```1 UNION select user,password from users#```
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/ef0a9b27-069b-4f5e-990b-cd765424fa2b)
+
+Now click on forward we can observe that we have all the credentials 
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/d9f4657a-17fe-453d-9ec2-38bc5acc1e72)
 
