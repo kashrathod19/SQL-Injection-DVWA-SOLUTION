@@ -41,7 +41,7 @@ We have found out the username and password of many users
 
 # SQL (Medium)
 
-We have the final payload ``` Union select user,password from user#``` this will work on both the level ```medium``` and ```hard``` we just need to find the injected parameter this level will be performed with the help of ```Burp Suite```
+We have the final payload ``` Union select user,password from users#``` this will work on both the level ```medium``` and ```hard``` we just need to find the injected parameter this level will be performed with the help of ```Burp Suite```
 
 First Intercept the request 
 
@@ -57,7 +57,7 @@ Now click on forward we can observe that we have all the credentials
 
 # SQL (Hard)
 
-We have the final payload ``` Union select user,password from user#```This will work on both the levels ```medium``` and ```hard``` we just need to find the injected parameter this level will be performed with the help of ```Burp Suite```
+We have the final payload ``` Union select user,password from users#```This will work on both the levels ```medium``` and ```hard``` we just need to find the injected parameter this level will be performed with the help of ```Burp Suite```
 
 Click on ```here to change the id```
 
