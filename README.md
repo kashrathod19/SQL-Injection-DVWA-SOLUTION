@@ -7,8 +7,11 @@ Welcome to the repository containing comprehensive solutions for SQL Injection v
 
 Repository Contents
 
-Low Level Solutions: Detailed walkthroughs for exploiting SQL Injection vulnerabilities at the 'Low' security level of DVWA. These solutions demonstrate basic techniques and concepts for beginners.
+Low-Level Solutions: Detailed walkthroughs for exploiting SQL Injection vulnerabilities at the 'Low' security level of DVWA. These solutions demonstrate basic techniques and concepts for beginners.
 
-Medium Level Solutions: Comprehensive solutions for the 'Medium' security level, showcasing intermediate techniques and methods to bypass slightly more complex protections.
+Medium-Level Solutions: Comprehensive solutions for the 'Medium' security level, showcasing intermediate techniques and methods to bypass slightly more complex protections.
 
-High Level Solutions: Advanced SQL Injection techniques and solutions for the 'High' security level, aimed at overcoming sophisticated security mechanisms.
+High-Level Solutions: Advanced SQL Injection techniques and solutions for the 'High' security level, aimed at overcoming sophisticated security mechanisms.
+
+# SQL (LOW)
+``` First, we try to understand the working by inserting '1' in textbox``` 
