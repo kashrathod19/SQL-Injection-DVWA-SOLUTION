@@ -15,3 +15,10 @@ High-Level Solutions: Advanced SQL Injection techniques and solutions for the 'H
 
 # SQL (LOW)
 ``` First, we try to understand the working by inserting '1' in textbox``` 
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/f5cf6cdf-6b73-4fc3-8143-cf2cd53fd895)
+
+```We can observe that it had given us the detail of user-id '1'```
+
+``` Now will try to get all the details of users by using a simple but effective payload i.e``` ' or 1=1#
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/21939e1a-d841-4e1f-a21d-7d4eaf1180a3)
