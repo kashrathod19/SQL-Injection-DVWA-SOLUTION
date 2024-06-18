@@ -6,6 +6,7 @@ The Damn Vulnerable Web Application (DVWA) is a popular web application designed
 Welcome to the repository containing comprehensive solutions for SQL Injection vulnerabilities in the Damn Vulnerable Web Application (DVWA). This repository is curated and maintained by Nihar Rathod, also known as Bugbot19, a seasoned security researcher and ethical hacker.
 
 Repository Contents
+
 Low Level Solutions: Detailed walkthroughs for exploiting SQL Injection vulnerabilities at the 'Low' security level of DVWA. These solutions demonstrate basic techniques and concepts for beginners.
 
 Medium Level Solutions: Comprehensive solutions for the 'Medium' security level, showcasing intermediate techniques and methods to bypass slightly more complex protections.
