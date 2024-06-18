@@ -33,7 +33,7 @@ We can notice that we have many table names and one of the table names is ```use
 
 ![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/6135d1b9-4163-4c2f-9a32-9fa6acebd729)
 
-We can observe from above that columns name such as ```id,login,password``` have high chances of containing credentials so will be using the final payload to get all the details ```'UNION select id,login,password from users#```
+We can observe from above that columns name such as ```id,login,password``` have high chances of containing credentials so will be using the final payload to get all the details ```'UNION select user,password from users#```
 
 ![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/b80fbf82-7fae-4b8c-b1a3-ac0ed991b28c)
 
