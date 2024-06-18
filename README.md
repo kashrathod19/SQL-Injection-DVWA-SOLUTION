@@ -24,3 +24,19 @@ We can observe that it had given us the detail of user-id ```1```
 Now, we will try to get all the details of users by using a simple but effective payload i.e ```' or 1=1#```
 
 ![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/21939e1a-d841-4e1f-a21d-7d4eaf1180a3)
+
+Will try to get the pieces of information related to the table such as ```table_name``` will inject ``` ' union select table_name,null from information_schema.tables#```
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/8873e7af-956d-444e-b57d-639da8e436cc)
+
+We can notice that we have many table names and one of the table names is ```users```There is a potential chance that table ```users``` must contain some credentials, Now we will go through the column name because through column name we can get the columns at which the credentials are store so the payload looks like this ```' union select column_name,null from information_schema.columns from table_name='users'```
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/6135d1b9-4163-4c2f-9a32-9fa6acebd729)
+
+We can observe from above that columns name such as ```id,login,password``` have high chances of containing credentials so will be using the final payload to get all the details ```'UNION select id,login,password from users#```
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/b80fbf82-7fae-4b8c-b1a3-ac0ed991b28c)
+
+We have found out the username and password of many users 
+
+
