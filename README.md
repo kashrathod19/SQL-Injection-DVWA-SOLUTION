@@ -41,7 +41,7 @@ We have found out the username and password of many users
 
 # SQL (Medium)
 
-We have the final payload ```' Union select user,password from user#``` this will work on both the level ```medium``` and ```hard``` we just need to find the injected parameter this level will be performed with the help of ```Burp Suite```
+We have the final payload ``` Union select user,password from user#``` this will work on both the level ```medium``` and ```hard``` we just need to find the injected parameter this level will be performed with the help of ```Burp Suite```
 
 First Intercept the request 
 
@@ -54,4 +54,26 @@ We will be using the ```id``` parameter to inject SQLi the payload will be the s
 Now click on forward we can observe that we have all the credentials 
 
 ![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/d9f4657a-17fe-453d-9ec2-38bc5acc1e72)
+
+# SQL (Hard)
+
+We have the final payload ``` Union select user,password from user#```This will work on both the levels ```medium``` and ```hard``` we just need to find the injected parameter this level will be performed with the help of ```Burp Suite```
+
+Click on ```here to change the id```
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/f140ec91-5604-4903-a8cf-00ca950ecb72)
+
+after clicking a different prompt will appear 
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/39a191f6-6ae0-421b-a91e-e2bb46d3dc3c)
+
+Try to insert the same payload i.e ``` ' Union Select user,password from users# ```
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/704d0d77-b194-4fa3-8c78-74c7bd8fb911)
+
+Click on ```submit``` and check out the first prompt all the user credentials are displayed
+
+![image](https://github.com/kashrathod19/SQL-Injection-DVWA-SOLUTION/assets/54115061/4e1209cb-0699-4b92-a450-aa077a3f174d)
+
+
 
